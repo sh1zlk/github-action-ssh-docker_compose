@@ -1,4 +1,4 @@
-## github-action-ssh-docker-compose
+## github-action-ssh-docker compose
 Simple github action to run docker-compose on remote host.
 
 This action packs contents of the action workspace into archive.
@@ -84,7 +84,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - uses: alex-ac/github-action-ssh-docker-compose@master
+    - uses: alex-ac/github-action-ssh-docker-compose@main
       name: Docker-Compose Remote Deployment
       with:
         ssh_host: example.com
@@ -114,7 +114,7 @@ jobs:
     steps:
     - actions/chockout@v2
 
-    - uses: alex-ac/github-action-ssh-docker-compose@master
+    - uses: sh1zik/github-action-ssh-docker-compose@master
       name: Docker-Stack Remote Deployment
       with:
         ssh_host: example.com
